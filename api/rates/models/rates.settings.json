@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rates",
+  "info": {
+    "name": "rates"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "old_price": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "new_price": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "services": {
+      "type": "richtext"
+    }
+  }
+}

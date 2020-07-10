@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authors",
+  "info": {
+    "name": "author"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "info": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

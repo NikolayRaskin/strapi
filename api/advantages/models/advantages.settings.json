@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advantages",
+  "info": {
+    "name": "advantages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 250
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

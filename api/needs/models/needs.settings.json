@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "needs",
+  "info": {
+    "name": "needs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
